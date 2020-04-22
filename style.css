@@ -1,4 +1,8 @@
 @import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+* {
+  font-family: "Lexend Giga", sans-serif;
+}
+
 .navbar-center {
   margin-left: auto;
   margin-right: auto;
@@ -15,6 +19,13 @@
   .navbar-center li:nth-child(3) {
     display: none;
   }
+}
+.navbar-center span {
+  color: #fff;
+}
+
+.navbar {
+  background-color: transparent !important;
 }
 
 .nav-link {
@@ -36,6 +47,38 @@
   .hamburger {
     margin-left: calc(50% - 50px);
   }
+}
+.jumbotron {
+  padding: 0;
+  margin: 0;
+  background: url("images/jumbotron.png") center center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.jumbotron-text {
+  color: #fff;
+  margin-top: 260px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 16px;
+}
+
+.button {
+  height: 50px;
+  width: 170px;
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.icon {
+  margin-left: calc(50% - 15px);
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

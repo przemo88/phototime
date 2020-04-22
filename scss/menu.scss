@@ -1,3 +1,7 @@
+*{
+    font-family: 'Lexend Giga', sans-serif;
+}
+
 .navbar-center{
     margin-left: auto;
     margin-right: auto;
@@ -5,7 +9,7 @@
     right: 0;
     width: 760px;
     text-align: center; 
-    font-size: 16px;
+    font-size: 16px; 
 
     li{
         width: 20%;
@@ -15,6 +19,14 @@
             }
         }
     }
+
+    span{
+        color: #fff;
+    }
+}
+
+.navbar{
+    background-color: transparent !important;
 }
 
 
