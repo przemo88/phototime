@@ -1,0 +1,15 @@
+@mixin title($color,$size){
+    color: $color;
+    font-size: $size;
+}
+
+@mixin button($margin){
+    height: 50px;
+    width: 170px;
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: $margin;
+}

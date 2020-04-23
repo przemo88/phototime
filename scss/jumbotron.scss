@@ -1,32 +1,50 @@
+@import "mixin.scss";
+
 .jumbotron{
     padding: 0;
     margin: 0;
     background: url("images/jumbotron.png") center center;
     height: 100vh;
-    background-size: cover;
+    background-size: cover; 
+
+    @media(orientation: landscape) and (max-width: 768px){
+        height: 150vh;
+    }
 }
 
 .jumbotron-text{
     color: #fff;
     margin-top: 260px;
     font-weight: bold;
+
+    @media(max-width: 768px){
+        margin-top: 60px;
+    }
+
+    @media(orientation: landscape) and (max-width: 768px){
+       margin-top: 30px;
+    }
+
+}
+
+.title{
+    text-align: center;
 }
 
 .desc{
     font-size: 16px;
+    text-align: center;
 }
 
-.button{
-    height: 50px;
-    width: 170px;
-    background-color: #16a085;
-    color: #fff;
-    border: none;
-    font-size: 12px;
-    margin-top: 25px;
+.button_jumbotron{
+    @include button(calc(50% - 85px));
 }
 
 .icon{
-    margin-left:calc(50% - 15px);
     margin-top: 150px;
+    margin-left: calc(50% - 42px);  
+
+    @media(orientation: landscape) and (max-width: 768px){
+        margin-top: 50px;
+    }
 }

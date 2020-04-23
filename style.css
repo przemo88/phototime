@@ -55,18 +55,38 @@
   height: 100vh;
   background-size: cover;
 }
+@media (orientation: landscape) and (max-width: 768px) {
+  .jumbotron {
+    height: 150vh;
+  }
+}
 
 .jumbotron-text {
   color: #fff;
   margin-top: 260px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .jumbotron-text {
+    margin-top: 60px;
+  }
+}
+@media (orientation: landscape) and (max-width: 768px) {
+  .jumbotron-text {
+    margin-top: 30px;
+  }
+}
+
+.title {
+  text-align: center;
+}
 
 .desc {
   font-size: 16px;
+  text-align: center;
 }
 
-.button {
+.button_jumbotron {
   height: 50px;
   width: 170px;
   background-color: #16a085;
@@ -74,11 +94,61 @@
   border: none;
   font-size: 12px;
   margin-top: 25px;
+  margin-left: calc(50% - 85px);
 }
 
 .icon {
-  margin-left: calc(50% - 15px);
   margin-top: 150px;
+  margin-left: calc(50% - 42px);
+}
+@media (orientation: landscape) and (max-width: 768px) {
+  .icon {
+    margin-top: 50px;
+  }
+}
+
+.row_phone {
+  width: 100%;
+  background-color: #f5f6f7;
+}
+@media (orientation: landscape) and (max-width: 768px) {
+  .row_phone {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .row_phone {
+    text-align: center;
+  }
+}
+
+.phone_title {
+  color: #16a085;
+  font-size: 18px;
+}
+
+.phone_desc {
+  text-align: right;
+  font-size: 12px;
+}
+
+.phone_margin {
+  margin-top: 115px;
+}
+
+.phone_desc_margin {
+  margin-top: 50px;
+}
+
+.button_phone {
+  height: 50px;
+  width: 170px;
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

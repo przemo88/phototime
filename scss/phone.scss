@@ -1,0 +1,37 @@
+@import "mixin.scss";
+
+.row_phone{
+   width: 100%;
+   background-color: #f5f6f7;
+
+   @media(orientation: landscape) and (max-width: 768px){
+       text-align: center;
+    } 
+
+    @media(max-width: 768px){
+        text-align: center;
+     } 
+
+}
+
+.phone_title{
+    @include title(#16a085,18px);
+}
+
+.phone_desc{
+    text-align: right;
+    font-size: 12px;
+}
+
+.phone_margin{
+    margin-top: 115px;
+}
+
+.phone_desc_margin{
+    margin-top: 50px;
+}
+
+.button_phone{
+    @include button(0);
+}
+
