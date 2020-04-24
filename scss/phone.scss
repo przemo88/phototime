@@ -1,17 +1,7 @@
 @import "mixin.scss";
 
 .row_phone{
-   width: 100%;
-   background-color: #f5f6f7;
-
-   @media(orientation: landscape) and (max-width: 768px){
-       text-align: center;
-    } 
-
-    @media(max-width: 768px){
-        text-align: center;
-     } 
-
+   @include row_section(490px,#f5f6f7);
 }
 
 .phone_title{
@@ -27,8 +17,8 @@
     margin-top: 115px;
 }
 
-.phone_desc_margin{
-    margin-top: 50px;
+.section_desc_margin{
+    margin-top: 40px; 
 }
 
 .button_phone{

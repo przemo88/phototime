@@ -1,0 +1,36 @@
+@import "mixin.scss";
+
+.row_design{
+    @include row_section(560px, #ffffff);
+}
+
+.green_phone_margin{
+    margin-top: 150px;
+
+    @media(max-width: 768px){
+        margin-top: 50px;
+        order: 2;
+    }
+}
+
+.design_desc{
+    @media(max-width: 768px){
+        margin-top: 450px;
+        order: 1;
+    }
+}
+
+.numbers{
+    font-size: 10px;
+    
+    @media(max-width:768px){
+        margin-right: 2%;
+    }
+    
+}
+
+.slide_button{
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin-top: 0px; 
+}

@@ -1,0 +1,47 @@
+@import "mixin.scss";
+
+.row_community{
+    @include row_section(480px, #f5f6f7);
+}
+
+.community_center{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.community_title{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.community_desc{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.slide_button_community{
+     text-align: right;
+     font-size: 20px;
+     letter-spacing: 10px;
+     
+    @media(max-width: 768px){
+        margin-top: 750px;
+        text-align: center;
+    }
+}
+
+.mobile_mt{
+    
+    @media(max-width: 768px){
+        margin-top: 50px;
+    }
+
+}
+
+.section_desc_margin{
+    padding: 0 !important;
+}
+
+.zero_padding{
+    padding-left: 0px;
+}
