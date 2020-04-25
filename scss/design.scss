@@ -2,21 +2,25 @@
 
 .row_design{
     @include row_section(560px, #ffffff);
+
+    @media(max-width:768px){
+        height: 1000px; 
+    }
 }
 
 .green_phone_margin{
     margin-top: 150px;
 
     @media(max-width: 768px){
-        margin-top: 50px;
+        margin-top: 60px;
         order: 2;
     }
 }
 
 .design_desc{
     @media(max-width: 768px){
-        margin-top: 450px;
-        order: 1;
+        margin-top: 100px;
+        order: 1; 
     }
 }
 

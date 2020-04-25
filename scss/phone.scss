@@ -2,6 +2,14 @@
 
 .row_phone{
    @include row_section(490px,#f5f6f7);
+
+   @media(max-width: 768px){
+       height: 850px;
+   }
+
+   @media(orientation: landscape) and (max-width: 768px){
+       height: 900px;
+   }
 }
 
 .phone_title{
