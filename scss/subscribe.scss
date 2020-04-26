@@ -1,0 +1,25 @@
+@import "mixins.scss";
+
+.sub_image{
+    @include jumbotron("images/sub.png");
+}
+
+.sub_title{
+    @include title(#f5f6f7,27px);
+    margin-top: 300px;
+    font-weight: bold;
+
+    @media(max-width:768px){
+        margin-top: 200px;
+    }
+
+}
+
+.email_btn{
+    @include input_btn("images/check.png", #16a085, #16a085, 60px, 60px, 20px);
+}
+
+.email_input{
+    @include input_text(#ffffff, 280px, 60px, 20px);
+}
+

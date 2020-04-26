@@ -1,0 +1,44 @@
+@import "mixins.scss";
+
+.row_download{
+    @include row_section(400px, #f5f6f7);
+
+    @media(max-width: 768px){
+        height: 500px;
+    }
+
+}
+
+.download_title{
+    @include title(#000000, 24px);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.download_desc{
+    text-align: center;
+    font-size: 12px;
+
+    @media(max-width: 768px){
+        margin-top: 20px;
+    }
+
+}
+
+.download_input_left_icon{
+    @include input_btn("images/apple.png", #16a085, #16a085, 60px, 60px, 20px);
+}
+
+.download_input_right_icon{
+    @include input_btn("images/android.png", #16a085, #16a085, 60px, 60px, 20px);
+}
+
+.download_input{
+    @include input_text(#1abc9c, 240px, 60px, 20px); 
+    border: 1px solid #1abc9c;
+}
+
+.download_input::placeholder {
+    color: #fff !important;
+  }
+

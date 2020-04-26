@@ -1,7 +1,11 @@
-@import "mixin.scss";
+@import "mixins.scss";
 
 .row_phone{
    @include row_section(490px,#f5f6f7);
+
+   @media(max-width: 1140px) and (min-width: 769px){
+       height: 550px;
+   }
 
    @media(max-width: 768px){
        height: 850px;
@@ -31,5 +35,11 @@
 
 .button_phone{
     @include button(0);
+}
+
+@media(max-width: 1140px) and (min-width: 769px){
+    .md_phone_margin{
+        margin-top: 115px;
+    }
 }
 

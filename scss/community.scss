@@ -1,10 +1,14 @@
-@import "mixin.scss";
+@import "mixins.scss";
 
 .row_community{
     @include row_section(480px, #f5f6f7);
 
     @media(max-width: 768px){
         height: 950px; 
+    }
+
+    @media(max-width: 1140px) and (min-width: 769px){
+        height: 350px;
     }
 
 }
@@ -17,11 +21,21 @@
 .community_title{
     font-weight: bold;
     margin-top: 30px;
+
+    @media(max-width: 1140px) and (min-width: 769px){
+        margin-top: 10px;
+    }
+
 }
 
 .community_desc{
     margin-top: 30px;
     font-size: 12px;
+
+    @media(max-width: 1140px) and (min-width: 769px){
+        margin-top: 10px;
+    }
+
 }
 
 .slide_button_community{
@@ -36,11 +50,9 @@
 }
 
 .mobile_mt{
-    
     @media(max-width: 768px){
         margin-top: 50px;
     }
-
 }
 
 .section_desc_margin{
@@ -48,5 +60,15 @@
 }
 
 .zero_padding{
-    padding-left: 0px;
+    padding: 0;
 }
+
+.img_mobile{
+    @media(max-width: 768px){
+        width: 100vw;
+        overflow: hidden;
+        background-size: initial;
+        object-fit: cover;
+    }
+}
+

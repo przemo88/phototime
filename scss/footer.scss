@@ -1,0 +1,47 @@
+@import "mixins.scss";
+
+.row_footer{
+    @include row_section(130px, #fff);
+}
+
+.footer_border{
+    border-right: 1px solid #000;
+    padding-right: 2%;
+    padding-left: 2%; 
+    display: inline;
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    &:nth-child(3){
+        border: none;
+    }
+
+    @media(max-width: 768px){
+        display: block;
+        border: none;
+    }
+}
+
+.footer_desc{
+    font-size: 12px;
+    margin-top: 20px; 
+}
+
+.footer_item{
+    margin-top: 50px; 
+
+    div{
+        margin-top: 20px;
+    }
+}
+
+.footer_logo{
+    margin-left: 90%;
+    margin-top: 50px;
+
+    @media(max-width: 768px){
+        margin:20px 0;
+    }
+}

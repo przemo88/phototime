@@ -9,11 +9,11 @@
     right: 0;
     width: 760px;
     text-align: center; 
-    font-size: 16px; 
+    font-size: 16px;
 
     li{
-        width: 20%;
-        @media(max-width:768px){
+        width: 20%; 
+        @media(max-width:1140px){
             &:nth-child(3){
                 display: none;
             }
@@ -34,7 +34,7 @@
     padding-top: 25px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 1140px){
     .navbar{
         padding: 0 !important;
     }
